@@ -18,7 +18,7 @@ namespace FunctionApp4
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-
+            llog.LogInformation("C#");
             string name = req.Query["name"];
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
